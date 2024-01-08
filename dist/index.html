@@ -3,9 +3,9 @@
   <head>
     <!-- Page Information -->
     <meta charset="utf-8" />
-    <title>TODO: TITLE</title>
-    <meta name="description" content="Find me online!" />
-    <meta name="author" content="TODO: FILL IN" />
+    <title>Caribbean Kings</title>
+    <meta name="description" content="Find us online!" />
+    <meta name="author" content="Caribbean Kings" />
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,23 +22,39 @@
     <link rel="stylesheet" href="css/brands.css" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon-48.png" />
+    <link rel="icon" type="image/png" href="images/jamaica.png" />
 
     <style>
       /* Add background flair */
       body {
-        /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/bacgkround.svg"); */
-        background-color: linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        );
-        background-size: cover;
-        background-attachment: fixed;
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh; /* Set the height to at least the viewport height */
+        min-height: 100vh;
         margin: 0;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to bottom right, #b30000, #e6e600, #004d00);
+        z-index: -2; /* Ensure the gradient is behind the content */
+      }
+
+      body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url("images/pic2.jpeg") no-repeat center center / contain;
+        z-index: -1; /* Ensure the image is behind the content and the gradient */
       }
 
       /* Center content in a container */
@@ -52,11 +68,13 @@
         max-width: 100%;
       }
 
-      /* Add a glow border to the YouTube video */
-      iframe {
+      /* Add a glow border to the YouTube video and local MP4 video */
+      .video {
         border: 5px solid #808080;
         box-shadow: 0 0 15px #808080;
-        max-width: 100%; /* Make sure the video is responsive */
+        border-radius: 8px;
+        max-width: 640px; /* Set a max-width for the video container */
+        width: 100%; /* Make sure the video is responsive */
       }
 
       /* Style the buttons */
@@ -105,15 +123,15 @@
         <div class="column">
           <!-- Your Image Here -->
           <img
-            src="images/image1.png"
-            srcset="images/image1.png 2x"
+            src="images/pic4.jpeg"
+            srcset="images/pic4.jpeg 2x"
             alt="LittleLink Logo"
-            width="150"
-            height="150"
+            width="300"
+            height="270"
           />
 
           <!-- Title -->
-          <h1>TODO: TITLE FOR PAGE</h1>
+          <h1>👑Caribbean Kings👑</h1>
 
           <!-- Short Bio -->
           <!-- <p>👋 Hello! Here's the places to find me!</p> -->
@@ -125,7 +143,7 @@
           <!-- Instagram -->
           <a
             class="button button-instagram"
-            href="http://instagram.com/TODO"
+            href="http://instagram.com/caribbean_kingss"
             target="_blank"
             rel="noopener"
             ><img
@@ -137,30 +155,30 @@
           <br />
 
           <!-- Facebook -->
-          <a
-            class="button button-faceb"
-            href="https://www.facebook.com/TODO"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/facebook.svg"
-              alt="Facebook Logo"
-            />Facebook</a
-          >
-          <br />
+          <!-- <a -->
+          <!--   class="button button-faceb" -->
+          <!--   href="https://www.facebook.com/TODO" -->
+          <!--   target="_blank" -->
+          <!--   rel="noopener" -->
+          <!--   ><img -->
+          <!--     class="icon" -->
+          <!--     src="images/icons/facebook.svg" -->
+          <!--     alt="Facebook Logo" -->
+          <!--   />Facebook</a -->
+          <!-- > -->
+          <!-- <br /> -->
 
           <!-- Email -->
-          <a
-            class="button button-default"
-            href="mailto:TODO@domain.com"
-            target="_blank"
-            rel="noopener"
-          >
-            <img class="icon" src="images/icons/email.svg" alt="Email Icon" />
-            Email Me!
-          </a>
-          <br />
+          <!-- <a -->
+          <!--   class="button button-default" -->
+          <!--   href="mailto:TODO@domain.com" -->
+          <!--   target="_blank" -->
+          <!--   rel="noopener" -->
+          <!-- > -->
+          <!--   <img class="icon" src="images/icons/email.svg" alt="Email Icon" /> -->
+          <!--   Email Me! -->
+          <!-- </a> -->
+          <!-- <br /> -->
           <!-- commenting out this button that copies the emailAddress to the user's clipboard -->
           <!-- <button class="button" id="copyButton"> -->
           <!--   Copy Email to Clipboard if ☝️ didn't work! -->
@@ -201,6 +219,7 @@
           <a
             class="button button-yt"
             href="https://www.youtube.com/@TODO"
+            href="https://youtu.be/_4WcbWNFQpo?si=FcCQ-jjpgx4CQ1xj"
             target="_blank"
             rel="noopener"
             ><img
@@ -211,18 +230,18 @@
           >
           <br />
           <!-- <!-- Patreon -->
-          <a
-            class="button button-patreon"
-            href="http://patreon.com/TODO"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/patreon.svg"
-              alt="Patreon Logo"
-            />Patreon</a
-          >
-          <br />
+          <!-- <a -->
+          <!--   class="button button-patreon" -->
+          <!--   href="http://patreon.com/TODO" -->
+          <!--   target="_blank" -->
+          <!--   rel="noopener" -->
+          <!--   ><img -->
+          <!--     class="icon" -->
+          <!--     src="images/icons/patreon.svg" -->
+          <!--     alt="Patreon Logo" -->
+          <!--   />Patreon</a -->
+          <!-- > -->
+          <!-- <br /> -->
           <!---->
           <!-- <!-- Signal -->
           <!-- -->
@@ -240,52 +259,62 @@
           <!-- <br /> -->
 
           <!-- Venmo -->
-          <a
-            class="button button-venmo"
-            href="https://www.venmo.com/TODO"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/venmo.svg"
-              alt="Venmo Logo"
-            />Venmo</a
-          >
-          <br />
+          <!-- <a -->
+          <!--   class="button button-venmo" -->
+          <!--   href="https://www.venmo.com/TODO" -->
+          <!--   target="_blank" -->
+          <!--   rel="noopener" -->
+          <!--   ><img -->
+          <!--     class="icon" -->
+          <!--     src="images/icons/venmo.svg" -->
+          <!--     alt="Venmo Logo" -->
+          <!--   />Venmo</a -->
+          <!-- > -->
+          <!-- <br /> -->
 
           <!-- Cash App Dollar -->
-          <a
-            class="button button-cashapp"
-            href="https://cash.app/TODO/amount"
-            target="_blank"
-            rel="noopener"
-            ><img
-              class="icon"
-              src="images/icons/cashapp_dollar.svg"
-              alt="Cash App Logo"
-            />Cash App</a
-          >
-          <br />
+          <!-- <a -->
+          <!--   class="button button-cashapp" -->
+          <!--   href="https://cash.app/TODO/amount" -->
+          <!--   target="_blank" -->
+          <!--   rel="noopener" -->
+          <!--   ><img -->
+          <!--     class="icon" -->
+          <!--     src="images/icons/cashapp_dollar.svg" -->
+          <!--     alt="Cash App Logo" -->
+          <!--   />Cash App</a -->
+          <!-- > -->
+          <!-- <br /> -->
 
           <!-- <br /> -->
-          <!---->
-          <!-- <iframe -->
-          <!--   width="560" -->
-          <!--   height="315" -->
-          <!--   src="https://www.youtube.com/embed/_LX3-kJiLn0?si=bEhW09RQyhTgtS3B" -->
-          <!--   title="YouTube video player" -->
-          <!--   frameborder="0" -->
-          <!--   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
-          <!--   allowfullscreen -->
-          <!-- ></iframe> -->
-          <!-- <br /> -->
+          <!-- YouTube video -->
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_4WcbWNFQpo?si=dcZHTtOpBFrHKm-8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="video"
+          ></iframe>
+          <br />
+
+          <!-- Embedded video -->
+          <video controls class="video">
+            <source
+              src="images/everythings-gonna-be-allright.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
 
           <br />
           <p>Email - TODO@domain.com</p>
           <p>
             View source
             <a
-              href="https://github.com/doompony/little-link-qr-template"
+              href="https://github.com/doompony/littlelink-carribbeankings"
               target="_blank"
               rel="noopener"
               >here</a
