@@ -2,17 +2,13 @@
 
 ## Caribbean Kings Site
 
-Forked into caribbeankings GH user for GH pages link to be nicer. Make changes here and then pull in upstream.
+Forked into caribbeankings GH user for GH pages link to be nicer.
 
-## Deployments
+Make changes at https://github.com/doompony/littlelink-carribbeankings
 
-With custom domain: [vercel](https://vercel.com/dashboard)
+Then pull changes in at https://github.com/caribbeankings/littlelink
 
-Otherwise will use GH Pages via Actions
-
-## Current Sites
-
-[1man1.band](https://www.1man1.band) or [1man1band.com](https://www.1man1band.com)
+See finished product at: https://caribbeankings.github.io/littlelink/
 
 ## Service
 
