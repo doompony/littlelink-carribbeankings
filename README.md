@@ -1,5 +1,9 @@
 # Little Link + QR Codes Template
 
+## Caribbean Kings Site
+
+Forked into caribbeankings GH user for GH pages link to be nicer. Make changes here and then pull in upstream.
+
 ## Deployments
 
 With custom domain: [vercel](https://vercel.com/dashboard)
