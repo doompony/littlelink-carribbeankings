@@ -1,5 +1,7 @@
 # Little Link + QR Codes Template
 
+# Archived after launching [Digital Harbor](https://mydigitalharbor.com)
+
 ## Caribbean Kings Site
 
 Forked into caribbeankings GH user for GH pages link to be nicer.
